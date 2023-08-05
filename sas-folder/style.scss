@@ -1,0 +1,299 @@
+$maincolor: #FD4C28;
+$hovercolor: #e44323;
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    transition: all .3s ease;
+}
+
+.topLine {
+    background-color: $maincolor;
+
+    .icon {
+        background-color: rgb(250, 250, 250, .25);
+
+        &:hover {
+            cursor: pointer;
+            background-color: white;
+            color: $maincolor;
+        }
+    }
+
+
+}
+
+@media screen {}
+
+
+.navbar {
+    .dot {
+        color: $maincolor;
+    }
+
+    .active,
+    .nav-item a:hover {
+        color: $maincolor !important;
+    }
+
+    .rounded {
+        background-color: $maincolor;
+
+        &:hover {
+            background-color: #e44323;
+        }
+    }
+}
+
+.banner {
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        // background-color: rgb(250, 250, 250, .25);
+        opacity: 1 !important;
+
+        >div {
+            background-color: rgb(250, 250, 250, .25);
+
+            &:hover {
+                background-color: $maincolor;
+            }
+        }
+
+        .carousel-inner {
+            height: 100vh;
+        }
+
+    }
+
+    .carousel-item {
+        .txt {
+            z-index: 99;
+
+            h1 {
+                font-size: 4rem;
+            }
+        }
+
+        .btns {
+
+            button:first-of-type {
+                background-color: $maincolor;
+
+                &:hover {
+                    background-color: #e44323;
+                    ;
+                }
+
+            }
+
+            button:last-of-type {
+                &:hover {
+                    background-color: white;
+                    color: black;
+                }
+            }
+
+        }
+
+        img {
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+    }
+}
+
+
+.about {
+    .left {
+        h6 {
+            font-weight: 100;
+        }
+    }
+
+
+}
+
+.stats {
+    background-image: url("../images/bg_banner1.jpg");
+    height: 30vh;
+
+    .overlay {
+        background-color: rgba(255, 77, 41, 0.85);
+        height: 30vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .item {
+        z-index: 99;
+    }
+}
+
+
+.work {
+    .owl-carousel {
+        .owl-dots {
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+            width: 10%;
+
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+
+            button {
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 50%;
+                background-color: rgb(195, 194, 194);
+
+                &.active {
+                    background-color: $maincolor;
+                }
+            }
+        }
+
+        .txt {
+            left: 15%;
+            bottom: 25%;
+
+            h4 {
+                font-size: 4.2rem;
+                font-weight: bolder;
+            }
+
+            .dash {
+                height: .3rem;
+                width: 5rem;
+                background-color: $maincolor;
+            }
+
+            h6 {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+.team {
+    .card:hover {
+        .overlay {
+            opacity: 1;
+        }
+
+
+    }
+
+    .overlay {
+        height: 100%;
+        z-index: 10;
+        background-color: rgba(228, 67, 35, .6);
+        opacity: 0;
+
+        .icon {
+            width: 2rem;
+            height: 2rem;
+            background-color: rgba(255, 255, 255, .4);
+            cursor: pointer;
+            @include center();
+
+            &:hover {
+                background-color: white;
+                color: $maincolor;
+            }
+        }
+    }
+}
+
+.customers {
+    background: linear-gradient(-90deg, rgba(8, 32, 50, 0.8), rgba(8, 32, 50, 0.8)), url("/images/bg_banner1.jpg") no-repeat top center;
+
+    .item {
+        @include center();
+
+        img {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+        }
+
+        .stars,
+        h5 {
+            color: $maincolor;
+        }
+    }
+
+    .owl-dots {
+        // background-color: green;
+        @include center();
+        margin-top: 2rem;
+
+        .owl-dot {
+            height: 1rem;
+            width: 1rem;
+            border-radius: 50%;
+            background-color: rgb(195, 194, 194) !important;
+
+            &:nth-of-type(2) {
+                margin: 0 1rem;
+            }
+
+
+        }
+
+        .active {
+            background-color: $maincolor !important;
+        }
+
+    }
+
+    .owl-dot .active {
+        background-color: $maincolor;
+    }
+
+
+
+}
+
+.blog {
+    .items {
+        .item {
+            .txt {
+                top: 2rem;
+                left: 2rem;
+                padding: .4rem 1rem;
+                background-color: $maincolor;
+
+            }
+
+            .card-title {
+                color: $maincolor;
+            }
+        }
+    }
+}
+
+
+.footer {
+    background: linear-gradient(-90deg, rgba(8, 32, 50, 0.8), rgba(8, 32, 50, 0.8)), url("/images/bg_banner1.jpg") no-repeat top center;
+
+    .icon {
+        background-color: rgba(255, 255, 255, 0.25);
+
+        &:hover {
+            cursor: pointer;
+            background-color: white;
+            color: $maincolor;
+        }
+    }
+
+    .line {
+        height: .05rem;
+    }
+}

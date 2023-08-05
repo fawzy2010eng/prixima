@@ -1,0 +1,205 @@
+* {
+  transition: all 0.3s ease;
+}
+
+.topLine {
+  background-color: #FD4C28;
+}
+.topLine .icon {
+  background-color: rgba(250, 250, 250, 0.25);
+}
+.topLine .icon:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #FD4C28;
+}
+
+.navbar .dot {
+  color: #FD4C28;
+}
+.navbar .active,
+.navbar .nav-item a:hover {
+  color: #FD4C28 !important;
+}
+.navbar .rounded {
+  background-color: #FD4C28;
+}
+.navbar .rounded:hover {
+  background-color: #e44323;
+}
+
+.banner .carousel-control-prev,
+.banner .carousel-control-next {
+  opacity: 1 !important;
+}
+.banner .carousel-control-prev > div,
+.banner .carousel-control-next > div {
+  background-color: rgba(250, 250, 250, 0.25);
+}
+.banner .carousel-control-prev > div:hover,
+.banner .carousel-control-next > div:hover {
+  background-color: #FD4C28;
+}
+.banner .carousel-control-prev .carousel-inner,
+.banner .carousel-control-next .carousel-inner {
+  height: 100vh;
+}
+.banner .carousel-item .txt {
+  z-index: 99;
+}
+.banner .carousel-item .txt h1 {
+  font-size: 4rem;
+}
+.banner .carousel-item .btns button:first-of-type {
+  background-color: #FD4C28;
+}
+.banner .carousel-item .btns button:first-of-type:hover {
+  background-color: #e44323;
+}
+.banner .carousel-item .btns button:last-of-type:hover {
+  background-color: white;
+  color: black;
+}
+.banner .carousel-item img {
+  filter: grayscale(100%);
+}
+
+.about .left h6 {
+  font-weight: 100;
+}
+
+.stats {
+  background-image: url("../images/bg_banner1.jpg");
+  height: 30vh;
+}
+.stats .overlay {
+  background-color: rgba(255, 77, 41, 0.85);
+  height: 30vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.stats .item {
+  z-index: 99;
+}
+
+.work .owl-carousel .owl-dots {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  width: 10%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.work .owl-carousel .owl-dots button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: rgb(195, 194, 194);
+}
+.work .owl-carousel .owl-dots button.active {
+  background-color: #FD4C28;
+}
+.work .owl-carousel .txt {
+  left: 15%;
+  bottom: 25%;
+}
+.work .owl-carousel .txt h4 {
+  font-size: 4.2rem;
+  font-weight: bolder;
+}
+.work .owl-carousel .txt .dash {
+  height: 0.3rem;
+  width: 5rem;
+  background-color: #FD4C28;
+}
+.work .owl-carousel .txt h6 {
+  font-size: 2.5rem;
+}
+
+.team .card:hover .overlay {
+  opacity: 1;
+}
+.team .overlay {
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(228, 67, 35, 0.6);
+  opacity: 0;
+}
+.team .overlay .icon {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team .overlay .icon:hover {
+  background-color: white;
+  color: #FD4C28;
+}
+
+.customers {
+  background: linear-gradient(-90deg, rgba(8, 32, 50, 0.8), rgba(8, 32, 50, 0.8)), url("/images/bg_banner1.jpg") no-repeat top center;
+}
+.customers .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.customers .item img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+.customers .item .stars,
+.customers .item h5 {
+  color: #FD4C28;
+}
+.customers .owl-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.customers .owl-dots .owl-dot {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: rgb(195, 194, 194) !important;
+}
+.customers .owl-dots .owl-dot:nth-of-type(2) {
+  margin: 0 1rem;
+}
+.customers .owl-dots .active {
+  background-color: #FD4C28 !important;
+}
+.customers .owl-dot .active {
+  background-color: #FD4C28;
+}
+
+.blog .items .item .txt {
+  top: 2rem;
+  left: 2rem;
+  padding: 0.4rem 1rem;
+  background-color: #FD4C28;
+}
+.blog .items .item .card-title {
+  color: #FD4C28;
+}
+
+.footer {
+  background: linear-gradient(-90deg, rgba(8, 32, 50, 0.8), rgba(8, 32, 50, 0.8)), url("/images/bg_banner1.jpg") no-repeat top center;
+}
+.footer .icon {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.footer .icon:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #FD4C28;
+}
+.footer .line {
+  height: 0.05rem;
+}/*# sourceMappingURL=style.css.map */
