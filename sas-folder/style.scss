@@ -27,6 +27,18 @@ $hovercolor: #e44323;
 
 }
 
+@media only screen and (max-width: 992px) {
+
+    .topLine,
+    .banner .btns {
+        display: none !important;
+    }
+
+    // {
+    //     display: none;
+    // }
+}
+
 @media screen {}
 
 
@@ -114,25 +126,36 @@ $hovercolor: #e44323;
             font-weight: 100;
         }
     }
-
-
 }
 
 .stats {
-    background-image: url("../images/bg_banner1.jpg");
-    height: 30vh;
+    background: linear-gradient(-90deg, rgba(255, 77, 41, 0.85), rgba(255, 77, 41, 0.85)), url("/images/bg_banner1.jpg") no-repeat top center;
 
-    .overlay {
-        background-color: rgba(255, 77, 41, 0.85);
-        height: 30vh;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
+    height: 32rem;
+
+    // .overlay {
+    //     background-color: rgba(255, 77, 41, 0.85);
+    //     height: 32rem;
+    //     width: 100%;
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    // }
+
+    .container {
+        height: 32rem;
+
+        .items {
+            height: 100%;
+
+            .item {
+                z-index: 99;
+                @include center();
+            }
+        }
+
     }
 
-    .item {
-        z-index: 99;
-    }
+
 }
 
 

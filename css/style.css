@@ -14,6 +14,12 @@
   color: #FD4C28;
 }
 
+@media only screen and (max-width: 992px) {
+  .topLine,
+  .banner .btns {
+    display: none !important;
+  }
+}
 .navbar .dot {
   color: #FD4C28;
 }
@@ -69,18 +75,20 @@
 }
 
 .stats {
-  background-image: url("../images/bg_banner1.jpg");
-  height: 30vh;
+  background: linear-gradient(-90deg, rgba(255, 77, 41, 0.85), rgba(255, 77, 41, 0.85)), url("/images/bg_banner1.jpg") no-repeat top center;
+  height: 32rem;
 }
-.stats .overlay {
-  background-color: rgba(255, 77, 41, 0.85);
-  height: 30vh;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+.stats .container {
+  height: 32rem;
 }
-.stats .item {
+.stats .container .items {
+  height: 100%;
+}
+.stats .container .items .item {
   z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .work .owl-carousel .owl-dots {

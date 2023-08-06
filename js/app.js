@@ -1,9 +1,15 @@
-$('.owl-carousel').owlCarousel({
-    stagePadding: 350,
+$('.work .owl-carousel').owlCarousel({
+    // stagePadding: 350,
     loop: true,
+    margin: 10,
+    nav: true,
+    items: 1,
     responsive: {
-        1000: {
-            items: 1
+        0: {
+            stagePadding: 0
+        },
+        992: {
+            stagePadding: 350
         }
     }
 })
@@ -11,15 +17,5 @@ $('.customers .owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
     nav: true,
-    responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 3
-        },
-        1000: {
-            items: 5
-        }
-    }
+    items: 1
 })
